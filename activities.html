@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOTL Activities</title>
+    <link rel="stylesheet" href="sotl.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <section class="activities-header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="activities.html">ACTIVITIES</a></li>
+                    <li><a href="album.html">ALBUM</a></li>
+                    <li><a href="rules.html">RULES</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Activities</h1>
+            <p>Come Join our Shenanigans!</p>
+            <!-- <a href="" class="hero-btn">Visit Us To know More</a> -->
+        </div>
+
+    </section>
+
+    <section class="quote">
+        <p>
+            Join us for scheduled raids, treasure hunting, content farming and much more! If there's one
+            thing
+            the
+            game has taught us, it's that you never have to be alone.
+        </p>
+        <hr>
+    </section>
+
+    <!-- Activities -->
+
+    <section>
+
+        <div class="activities-slider">
+            <div class="activities-col" id="act-text">
+                <h1>Scheduled Raids</h1>
+                <p>We have multiple raid groups running every week. All our groups started with The Coils of Bahamut and
+                    are fighting their way through each raid either synched with guide or synched completely blind.</p>
+            </div>
+            <div class="activities-col">
+                <div id="slideshow1" class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <img src="img/Raids/Raids4.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="img/Raids/Raids8.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="img/Raids/Raids10.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="img/Raids/Raids1.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="img/Raids/Raids7.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="img/Raids/Raids11.png" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1, this.parentNode)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, this.parentNode)">&#10095;</a>
+
+
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1, slideshow1)"></span>
+                        <span class="dot" onclick="currentSlide(2, slideshow1)"></span>
+                        <span class="dot" onclick="currentSlide(3, slideshow1)"></span>
+                        <span class="dot" onclick="currentSlide(4, slideshow1)"></span>
+                        <span class="dot" onclick="currentSlide(5, slideshow1)"></span>
+                        <span class="dot" onclick="currentSlide(6, slideshow1)"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="activities-slider-notrev">
+            <div class="activities-col" id="act-right">
+                <h1>Treasure Maps</h1>
+                <p>Our treasure maps group runs every Saturday, come join the treasure hunt!</p>
+            </div>
+            <div class="activities-col">
+                <div id="slideshow2" class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <img src="img/Treasure/Treasure.jpg" style="width:100%">
+                    </div>
+
+                    <!-- <div class="mySlides fade">
+                        <img src="img/heart.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="img/Kugane Tower.png" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1, this.parentNode)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, this.parentNode)">&#10095;</a> -->
+
+
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1, slideshow2)"></span>
+                        <!-- <span class="dot" onclick="currentSlide(2, slideshow2)"></span>
+                        <span class="dot" onclick="currentSlide(3, slideshow2)"></span> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="activities-slider">
+            <div class="activities-col" id="act-text">
+                <h1>Content Farming</h1>
+                <p>We have a content farming group running every Thursday to get all the mounts from the games Extreme
+                    trails! Starting from ARR and all the way to Shadowbringers. </p>
+            </div>
+            <div class="activities-col">
+                <div id="slideshow4" class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <img src="img/Content/Content4.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="img/Content/Content1.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="img/Content/Content2.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="img/Content/Content3.png" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1, this.parentNode)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, this.parentNode)">&#10095;</a>
+
+
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1, slideshow4)"></span>
+                        <span class="dot" onclick="currentSlide(2, slideshow4)"></span>
+                        <span class="dot" onclick="currentSlide(3, slideshow4)"></span>
+                        <span class="dot" onclick="currentSlide(4, slideshow4)"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="act-btm">
+            <h1><span>And lots of other <br> shenanigans!</span></h4>
+                <img src="img/Winner Winner Chicken Dinner.png">
+                <p><i>Shhhhh</i></p>
+        </section>
+
+
+    </section>
+
+
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <h4>Quote</h4>
+        <p>"Who we meet in this world may be by the whim of
+            the Gods. <br> But once met, it falls upon us to bring
+            out the best in each other."
+        </p>
+        <div class="icons">
+            <i class="fa fa-shield"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Seers of the Lake <br> Template from Easy Tutorials</p>
+    </section>
+
+
+    <!-- Javascript for Toggle meny -->
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+        // Slideshow
+
+        var slideshow1 = document.getElementById("slideshow1");
+        slideshow1.currentSlideIndex = 1;
+        showSlides(slideshow1.currentSlideIndex, slideshow1);
+
+        var slideshow2 = document.getElementById("slideshow2");
+        slideshow2.currentSlideIndex = 1;
+        showSlides(slideshow2.currentSlideIndex, slideshow2);
+
+        var slideshow4 = document.getElementById("slideshow4");
+        slideshow4.currentSlideIndex = 1;
+        showSlides(slideshow4.currentSlideIndex, slideshow4);
+
+
+        function plusSlides(n, slideshow) {
+            showSlides(slideshow.currentSlideIndex += n, slideshow);
+        }
+
+        function currentSlide(n, slideshow) {
+            showSlides(slideshow.currentSlideIndex = n, slideshow);
+        }
+
+        function showSlides(n, slideshow) {
+
+
+
+            var i;
+            var slides = slideshow.getElementsByClassName("mySlides");
+            var dots = slideshow.getElementsByClassName("dot");
+
+            if (n > slides.length) { slideshow.currentSlideIndex = 1 }
+            if (n < 1) { slideshow.currentSlideIndex = slides.length }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[slideshow.currentSlideIndex - 1].style.display = "block";
+            dots[slideshow.currentSlideIndex - 1].className += " active";
+        }
+
+    </script>
+
+</body>
+
+</html>
