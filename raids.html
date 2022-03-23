@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOTL Activities</title>
+    <title>SOTL Raids</title>
     <link rel="icon" href="img/icon.png">
     <link rel="stylesheet" href="sotl.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -84,50 +84,6 @@
             navLinks.style.right = "-200px";
         }
 
-        // Slideshow
-
-        var slideshow1 = document.getElementById("slideshow1");
-        slideshow1.currentSlideIndex = 1;
-        showSlides(slideshow1.currentSlideIndex, slideshow1);
-
-        var slideshow2 = document.getElementById("slideshow2");
-        slideshow2.currentSlideIndex = 1;
-        showSlides(slideshow2.currentSlideIndex, slideshow2);
-
-        var slideshow4 = document.getElementById("slideshow4");
-        slideshow4.currentSlideIndex = 1;
-        showSlides(slideshow4.currentSlideIndex, slideshow4);
-
-
-        function plusSlides(n, slideshow) {
-            showSlides(slideshow.currentSlideIndex += n, slideshow);
-        }
-
-        function currentSlide(n, slideshow) {
-            showSlides(slideshow.currentSlideIndex = n, slideshow);
-        }
-
-        function showSlides(n, slideshow) {
-
-
-
-            var i;
-            var slides = slideshow.getElementsByClassName("mySlides");
-            var dots = slideshow.getElementsByClassName("dot");
-
-            if (n > slides.length) { slideshow.currentSlideIndex = 1 }
-            if (n < 1) { slideshow.currentSlideIndex = slides.length }
-
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-
-            slides[slideshow.currentSlideIndex - 1].style.display = "block";
-            dots[slideshow.currentSlideIndex - 1].className += " active";
-        }
 
     </script>
 
