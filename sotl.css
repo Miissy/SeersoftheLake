@@ -49,6 +49,15 @@ html {
     position: relative;
 }
 
+.raids-header {
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)), url(img/otter.png);
+    background-position: top;
+    background-size: cover;
+    position: relative;
+}
+
 .header {
     min-height: 80vh;
     width: 100%;
