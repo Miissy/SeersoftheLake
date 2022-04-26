@@ -635,7 +635,7 @@ p {
 }
 
 .rules-col {
-    flex-basis: 31%;
+    flex-basis: 19%;
     background: #303030;
     border-radius: 10px;
     margin-bottom: 5%;
@@ -705,6 +705,10 @@ p {
 }
 
 @media(max-width: 1300px) {
+    .row {
+        flex-direction: column;
+    }
+
     .rules h1:before {
         width: 35%;
     }
@@ -715,9 +719,6 @@ p {
 }
 
 @media(max-width: 700px) {
-    .row {
-        flex-direction: column;
-    }
     .rules h1:before {
         width: 35%;
     }
