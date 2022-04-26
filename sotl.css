@@ -6,7 +6,7 @@ html {
 
 /* Montserrat or Roboto */
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -16,7 +16,7 @@ html {
 .home-header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.2)), url(img/luna-somnia/somnia4.png);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.2)), url(img/luna-somnia/somnia4.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -25,7 +25,7 @@ html {
 .events-header {
     min-height: 80vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)), url(img/events-gallery.png);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url(img/events-gallery.png);
     background-position: top;
     background-size: cover;
     position: relative;
@@ -34,7 +34,7 @@ html {
 .activities-header {
     min-height: 80vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)), url(img/Album/Baguette.png);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url(img/Album/Baguette.png);
     background-position: top;
     background-size: cover;
     position: relative;
@@ -43,7 +43,7 @@ html {
 .album-header {
     min-height: 80vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)), url(img/Album/Clemont.png);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url(img/Album/Clemont.png);
     background-position: top;
     background-size: cover;
     position: relative;
@@ -52,7 +52,16 @@ html {
 .raids-header {
     min-height: 80vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)), url(img/raidgroups/HEADER.png);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url(img/raidgroups/HEADER.png);
+    background-position: top;
+    background-size: cover;
+    position: relative;
+}
+
+.comics-header {
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url(img/easter/easter3.jpg);
     background-position: top;
     background-size: cover;
     position: relative;
@@ -61,7 +70,7 @@ html {
 .header {
     min-height: 80vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)), url(img/fireplace.png);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url(img/fireplace.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -158,12 +167,14 @@ nav .fa {
 }
 
 @media(max-width: 700px) {
-    .text-box h1{
+    .text-box h1 {
         font-size: 20px;
     }
+
     .nav-links ul li {
         display: block;
     }
+
     .nav-links {
         position: absolute;
         background: #28D9C7;
@@ -202,14 +213,14 @@ nav .fa {
     margin-top: 50px;
 }
 
-.quote hr{
-	width: 300px;
-	height: 2px;
-	margin-left: auto;
-	margin-right: auto;
-	background-color:#777;
-	border: 0 none;
-	margin-top: 20px;
+.quote hr {
+    width: 300px;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #777;
+    border: 0 none;
+    margin-top: 20px;
 }
 
 /* Shared style */
@@ -445,6 +456,7 @@ p {
 .album-col:nth-of-type(even) {
     flex: 2;
 }
+
 #album-text {
     padding-right: 20px;
 }
@@ -496,16 +508,19 @@ p {
 
 /* Mist */
 
-.mist, .act-btm {
+.mist,
+.act-btm {
     width: 70%;
     margin: auto;
 }
 
-.mist img, .act-btm img {
+.mist img,
+.act-btm img {
     width: 100%;
 }
 
-.mist h1, .act-btm h1 {
+.mist h1,
+.act-btm h1 {
     margin: 60px auto;
     text-align: center;
     font-size: 40px;
@@ -561,7 +576,8 @@ p {
     z-index: -2;
 }
 
-.mist span, .act-btm span {
+.mist span,
+.act-btm span {
     background: #fff;
 }
 
@@ -697,7 +713,7 @@ p {
 }
 
 .rules-col:hover {
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
 }
 
 .fa-quote-right {
@@ -764,6 +780,14 @@ p {
     margin: 30px auto 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+#comics-gallery {
+    width: 80%;
+    margin: 30px auto 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     grid-gap: 30px;
 }
 
@@ -843,13 +867,13 @@ p {
 }
 
 .events-gallery img:hover {
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.3);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
 }
 
 .events-full-img {
     width: 100%;
     height: 100vh;
-    background: rgba(0,0,0,0.9);
+    background: rgba(0, 0, 0, 0.9);
     position: fixed;
     top: 0;
     left: 0;
@@ -896,7 +920,8 @@ p {
     align-items: center;
 }
 
-.activities-slider p, .activities-slider-notrev p {
+.activities-slider p,
+.activities-slider-notrev p {
     padding-top: 10px;
 }
 
@@ -910,15 +935,19 @@ p {
 }
 
 @media(max-width: 1000px) {
-    .activities-slider, .activities-slider-notrev {
+
+    .activities-slider,
+    .activities-slider-notrev {
         flex-direction: column;
     }
 
-    .activities-slider img, .activities-slider-notrev img {
+    .activities-slider img,
+    .activities-slider-notrev img {
         margin-top: 10px;
     }
 
-    .activities-slider h1, .activities-slider-notrev h1 {
+    .activities-slider h1,
+    .activities-slider-notrev h1 {
         font-size: 30px;
         text-align: center;
     }
@@ -928,78 +957,98 @@ p {
     text-align: center;
 }
 
-.mySlides {display:none}
+.mySlides {
+    display: none
+}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
 }
 
 /* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor:pointer;
-  height: 8px;
-  width: 8px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.active,
+.dot:hover {
+    background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
 }
 
 /* Rules Page */
@@ -1025,4 +1074,3 @@ p {
         width: 70%;
     }
 }
-

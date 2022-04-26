@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>SOTL Events</title>
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="sotl.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <section class="comics-header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="activities.html">ACTIVITIES</a></li>
+                    <li><a href="album.html">ALBUM</a></li>
+                    <li><a href="raids.html">RAIDS</a></li>
+                    <li><a href="comics.html">COMICS</a></li>
+                    <li><a href="rules.html">RULES</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Comics</h1>
+            <p>Potato</p>
+        </div>
+
+    </section>
+
+    <!-- Easter Comic 2022 -->
+
+    <section>
+
+        <div class="events-gallery-text">
+            <h1>By Aigis</h1>
+        </div>
+        <div class="events-full-img" id="fullImgBox">
+            <img src="img/easter/comic1.png" id="fullImg">
+            <span onclick="closeFullImg()">X</span>
+        </div>
+        <div class="events-gallery" id="comics-gallery">
+            <img src="img/easter/comic1.png" onclick="openFullImg(this.src)">
+            <img src="img/easter/comic2.png" onclick="openFullImg(this.src)">
+            <img src="img/easter/comic3.png" onclick="openFullImg(this.src)">
+            <img src="img/easter/comic4.png" onclick="openFullImg(this.src)">
+            <img src="img/easter/comic5.png" onclick="openFullImg(this.src)">
+            <img src="img/easter/comic6.png" onclick="openFullImg(this.src)">
+            <img src="img/easter/comic7.png" onclick="openFullImg(this.src)">
+            <img src="img/easter/comic8.png" onclick="openFullImg(this.src)">
+            <img src="img/easter/comic9.png" onclick="openFullImg(this.src)">
+            <img src="img/easter/comic10.png" onclick="openFullImg(this.src)">
+            <img src="img/easter/comic11.png" onclick="openFullImg(this.src)">
+            <img src="img/easter/comic12.png" onclick="openFullImg(this.src)">
+            <img src="img/easter/comic13.png" onclick="openFullImg(this.src)">
+            <img src="img/easter/comic14.png" onclick="openFullImg(this.src)">
+            <img src="img/easter/comic15.png" onclick="openFullImg(this.src)">
+            <img src="img/easter/comic16.png" onclick="openFullImg(this.src)">
+            <img src="img/easter/comic17.png" onclick="openFullImg(this.src)">
+            <img src="img/easter/comic18.png" onclick="openFullImg(this.src)">
+            <img src="img/easter/comic19.png" onclick="openFullImg(this.src)">
+            <img src="img/easter/comic20.png" onclick="openFullImg(this.src)">
+            <img src="img/easter/comic21.png" onclick="openFullImg(this.src)">
+            <img src="img/easter/comic22.png" onclick="openFullImg(this.src)">
+            <img src="img/easter/comic23.png" onclick="openFullImg(this.src)">
+            <img src="img/easter/comic24.png" onclick="openFullImg(this.src)">
+            <img src="img/easter/comic25.png" onclick="openFullImg(this.src)">
+            <img src="img/easter/comic26.png" onclick="openFullImg(this.src)">
+            <img src="img/easter/comic27.png" onclick="openFullImg(this.src)">
+            <img src="img/easter/comic28.png" onclick="openFullImg(this.src)">
+            <img src="img/easter/comic29.png" onclick="openFullImg(this.src)">
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <h4>Quote</h4>
+        <p>"Who we meet in this world may be by the whim of
+            the Gods. <br> But once met, it falls upon us to bring
+            out the best in each other."
+        </p>
+        <div class="icons">
+            <i class="fa fa-shield"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Seers of the Lake <br> Template from Easy Tutorials</p>
+    </section>
+
+
+    <!-- Javascript for Toggle meny -->
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+
+        // JS for Full Image
+
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(pic) {
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+
+        function closeFullImg() {
+            fullImgBox.style.display = "none"
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
