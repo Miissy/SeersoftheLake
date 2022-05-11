@@ -22,7 +22,12 @@ html {
     position: relative;
 }
 
-.events-header {
+.events-header,
+.activities-header,
+.album-header,
+.raids-header,
+.comics-header,
+.header {
     min-height: 80vh;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url(img/events-gallery.png);
@@ -32,48 +37,24 @@ html {
 }
 
 .activities-header {
-    min-height: 80vh;
-    width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url(img/Album/Baguette.png);
-    background-position: top;
-    background-size: cover;
-    position: relative;
 }
 
 .album-header {
-    min-height: 80vh;
-    width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url(img/Album/Clemont.png);
-    background-position: top;
-    background-size: cover;
-    position: relative;
 }
 
 .raids-header {
-    min-height: 80vh;
-    width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url(img/raidgroups/HEADER.png);
-    background-position: top;
-    background-size: cover;
-    position: relative;
 }
 
 .comics-header {
-    min-height: 80vh;
-    width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url(img/easter/easter3.jpg);
-    background-position: top;
-    background-size: cover;
-    position: relative;
 }
 
 .header {
-    min-height: 80vh;
-    width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url(img/fireplace.png);
     background-position: center;
-    background-size: cover;
-    position: relative;
 }
 
 /* Nav */
